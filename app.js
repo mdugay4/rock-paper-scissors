@@ -28,7 +28,11 @@ const game = () => {
         });
 
         // computer options
-        const computerOptions = ['Rock', 'Paper', 'Scissors'];
+        const computerOption = {
+            0: 'Rock',
+            1: 'Paper',
+            2: 'Scissors',
+        };
 
         options.forEach((option) => {
             option.addEventListener('click', function () {
@@ -38,7 +42,7 @@ const game = () => {
 
                 // computer choice
                 const computerNumber = Math.floor(Math.random() * 3);
-                const computerChoice = computerOptions[computerNumber];
+                const computerChoice = computerOption[computerNumber];
 
                 setTimeout(() => {
                     // here is where we compare hands
