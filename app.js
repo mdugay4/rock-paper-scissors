@@ -28,21 +28,20 @@ const game = () => {
         });
 
         // computer options
-        const computerOptions = ['rock', 'paper', 'scissors'];
+        const computerOptions = ['Rock', 'Paper', 'Scissors'];
 
         options.forEach((option) => {
             option.addEventListener('click', function () {
                 // reset img to rock
                 playerHand.src = `./assets/rock.png`;
                 computerHand.src = `./assets/rock.png`;
-                // console.log(this);
 
                 // computer choice
                 const computerNumber = Math.floor(Math.random() * 3);
                 const computerChoice = computerOptions[computerNumber];
 
                 setTimeout(() => {
-                    // here is where we call comapre hands
+                    // here is where we compare hands
                     compareHands(this.textContent, computerChoice);
 
                     // update images
@@ -70,8 +69,8 @@ const game = () => {
         }
 
         // check for rock
-        if (playerChoice === 'rock') {
-            if (computerChoice === 'scissors') {
+        if (playerChoice === 'Rock') {
+            if (computerChoice === 'Scissors') {
                 winner.textContent = 'Player wins';
                 pScore++;
                 return;
@@ -83,8 +82,8 @@ const game = () => {
         }
 
         // check for paper
-        if (playerChoice === 'paper') {
-            if (computerChoice === 'rock') {
+        if (playerChoice === 'Paper') {
+            if (computerChoice === 'Rock') {
                 winner.textContent = 'Player wins';
                 pScore++;
                 return;
@@ -96,8 +95,8 @@ const game = () => {
         }
 
         // check for scissors
-        if (playerChoice === 'scissors') {
-            if (computerChoice === 'paper') {
+        if (playerChoice === 'Scissors') {
+            if (computerChoice === 'Paper') {
                 winner.textContent = 'Player wins';
                 pScore++;
                 return;

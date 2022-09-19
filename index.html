@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Rock, Paper, Scissors</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Rock, Paper, Scissors</title>
-</head>
-
-<body>
-
-    <section class="game">
-        <div class="score">
-            <div class="player-score">
-                <h2>Player</h2>
-                <p>0</p>
+    <body>
+        <section class="game">
+            <div class="score">
+                <div class="player-score">
+                    <h2>Player</h2>
+                    <p>0</p>
+                </div>
+                <div class="computer-score">
+                    <h2>Computer</h2>
+                    <p>0</p>
+                </div>
             </div>
-            <div class="computer-score">
-                <h2>Computer</h2>
-                <p>0</p>
+
+            <div class="intro">
+                <h1>Rock, Paper, Scissors</h1>
+                <button>Press To Play</button>
             </div>
-        </div>
 
-        <div class="intro">
-            <h1>Rock, Paper, Scissors</h1>
-            <button>Press To Play</button>
-        </div>
-
-        <div class="match fadeOut">
-            <h2 class="winner">Who Will Win?</h2>
-            <div class="hands">
-                <img src="assets\rock.png" alt="" class="player-hand" />
-                <img src="assets\rock.png" alt="" class="computer-hand" />
+            <div class="match fadeOut">
+                <h2 class="winner">Who Will Win?</h2>
+                <div class="hands">
+                    <img src="assets\rock.png" alt="" class="player-hand" />
+                    <img src="assets\rock.png" alt="" class="computer-hand" />
+                </div>
+                <div class="options">
+                    <button>Rock</button>
+                    <button>Paper</button>
+                    <button>Scissors</button>
+                </div>
             </div>
-            <div class="options">
-                <button class="rock">Rock</button>
-                <button class="paper">Paper</button>
-                <button class="scissors">Scissors</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <script src="app.js"></script>
-</body>
-
+        <script src="app.js"></script>
+    </body>
 </html>
