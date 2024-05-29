@@ -46,6 +46,7 @@ const game = () => {
 
                 setTimeout(() => {
                     // here is where we compare hands
+                    console.log(this.textContent, computerChoice);
                     compareHands(this.textContent, computerChoice);
 
                     // update images
@@ -73,8 +74,8 @@ const game = () => {
         }
 
         // check for rock
-        if (playerChoice === 'Rock') {
-            if (computerChoice === 'Scissors') {
+        if (playerChoice === 'rock') {
+            if (computerChoice === 'scissors') {
                 winner.textContent = 'Player wins';
                 pScore++;
                 return;
@@ -86,8 +87,8 @@ const game = () => {
         }
 
         // check for paper
-        if (playerChoice === 'Paper') {
-            if (computerChoice === 'Rock') {
+        if (playerChoice === 'paper') {
+            if (computerChoice === 'rock') {
                 winner.textContent = 'Player wins';
                 pScore++;
                 return;
@@ -99,8 +100,8 @@ const game = () => {
         }
 
         // check for scissors
-        if (playerChoice === 'Scissors') {
-            if (computerChoice === 'Paper') {
+        if (playerChoice === 'scissors') {
+            if (computerChoice === 'paper') {
                 winner.textContent = 'Player wins';
                 pScore++;
                 return;
