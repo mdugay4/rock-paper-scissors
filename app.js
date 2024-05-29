@@ -29,9 +29,9 @@ const game = () => {
 
         // computer options
         const computerOption = {
-            0: 'Rock',
-            1: 'Paper',
-            2: 'Scissors',
+            0: 'rock',
+            1: 'paper',
+            2: 'scissors',
         };
 
         options.forEach((option) => {
